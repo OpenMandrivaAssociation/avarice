@@ -1,38 +1,30 @@
-Name:           avarice
-Version:        2.6
-Release:        2%{?dist}
-Summary:        Program for interfacing the Atmel JTAG ICE to GDB
-
-Group:          Applications/Engineering
-License:        GPL
-URL:            http://sourceforge.net/projects/avarice
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-
-BuildRequires:  binutils-devel
-#Requires:       
+Name: avarice
+Version: 2.6
+Release: %mkrel 1
+Summary: Program for interfacing the Atmel JTAG ICE to GDB
+Group: Development
+License: GPL
+URL: http://sourceforge.net/projects/avarice
+Source: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+BuildRequires: binutils-devel
 
 %description
-Program for interfacing the Atmel JTAG ICE to GDB to allow users to 
-debug their embedded AVR target
+Program for interfacing the Atmel JTAG ICE to GDB to allow users to debug their
+embedded AVR target
 
 %prep
 %setup -q
 
-
 %build
 %configure
-make %{?_smp_mflags}
-
+%make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
-
+rm -rf %buildroot
+make install DESTDIR=%buildroot
 
 %clean
-rm -rf $RPM_BUILD_ROOT
-
+rm -rf %buildroot
 
 %files
 %defattr(-,root,root,-)
@@ -40,5 +32,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_mandir}/man1/*
-
-

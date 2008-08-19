@@ -1,6 +1,6 @@
 Name: avarice
 Version: 2.7
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Program for interfacing the Atmel JTAG ICE to GDB
 Group: Development/Other
 License: GPL
@@ -17,12 +17,12 @@ embedded AVR target
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
 rm -rf %buildroot
-make install DESTDIR=%buildroot
+%makeinstall_std
 
 %clean
 rm -rf %buildroot

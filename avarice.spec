@@ -1,6 +1,6 @@
 Name: avarice
 Version: 2.7
-Release: %mkrel 5
+Release: %mkrel 6
 Summary: Program for interfacing the Atmel JTAG ICE to GDB
 Group: Development/Other
 License: GPL

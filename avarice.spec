@@ -3,7 +3,7 @@ Version: 2.10
 Release: %mkrel 1
 Summary: Program for interfacing the Atmel JTAG ICE to GDB
 Group: Development/Other
-License: GPL
+License: GPLv2
 URL: http://sourceforge.net/projects/avarice
 Source0: http://downloads.sourceforge.net/project/%{name}/%{name}/%{name}-%{version}/%{name}-%{version}.tar.bz2
 BuildRequires: binutils-devel

@@ -5,7 +5,7 @@ Summary: Program for interfacing the Atmel JTAG ICE to GDB
 Group: Development/Other
 License: GPL
 URL: http://sourceforge.net/projects/avarice
-Source: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0: http://downloads.sourceforge.net/project/%{name}/%{name}/%{name}-%{version}/%{name}-%{version}.tar.bz2
 BuildRequires: binutils-devel
 Buildroot: %{_tmppath}/%{name}-%{version}-root
 

@@ -29,7 +29,7 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root,-)
-%doc AUTHORS ChangeLog COPYING NEWS
+%doc AUTHORS ChangeLog NEWS
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_mandir}/man1/*

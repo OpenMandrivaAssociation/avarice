@@ -6,6 +6,7 @@ Group:		Development/Other
 License:	GPLv2
 URL:		http://sourceforge.net/projects/avarice
 Source0:	http://downloads.sourceforge.net/project/%{name}/%{name}/%{name}-%{version}/%{name}-%{version}.tar.bz2
+Patch0:		avarice-2.10-fix-const-char-conversion.patch
 BuildRequires:	binutils-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-root
 
@@ -15,6 +16,7 @@ embedded AVR target.
 
 %prep
 %setup -q
+%patch0 -p1 -b .const_char~
 
 %build
 %configure2_5x

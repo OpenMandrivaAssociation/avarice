@@ -1,0 +1,36 @@
+diff -urN avarice-2.12/src/jtag2prog.cc avarice-2.12-patched/src/jtag2prog.cc
+--- avarice-2.12/src/jtag2prog.cc	2011-12-12 23:42:23.000000000 +1100
++++ avarice-2.12-patched/src/jtag2prog.cc	2014-02-12 15:35:31.811785602 +1100
+@@ -36,12 +36,13 @@
+ #include <fcntl.h>
+ #include <string.h>
+ #include <math.h>
+-#include <bfd.h>
+ 
+ #include "avarice.h"
+ #include "jtag.h"
+ #include "jtag2.h"
+ 
++#include <bfd.h>
++
+ // The API changed for this in bfd.h. This is a work around.
+ #ifndef bfd_get_section_size
+ #  define bfd_get_section_size bfd_get_section_size_before_reloc
+diff -urN avarice-2.12/src/jtagprog.cc avarice-2.12-patched/src/jtagprog.cc
+--- avarice-2.12/src/jtagprog.cc	2011-12-12 23:42:23.000000000 +1100
++++ avarice-2.12-patched/src/jtagprog.cc	2014-02-12 15:35:41.286918206 +1100
+@@ -35,12 +35,13 @@
+ #include <fcntl.h>
+ #include <string.h>
+ #include <math.h>
+-#include <bfd.h>
+ 
+ #include "avarice.h"
+ #include "jtag.h"
+ #include "jtag1.h"
+ 
++#include <bfd.h>
++
+ // The API changed for this in bfd.h. This is a work around.
+ #ifndef bfd_get_section_size
+ #  define bfd_get_section_size bfd_get_section_size_before_reloc

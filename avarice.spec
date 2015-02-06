@@ -1,7 +1,7 @@
 Summary:	Program for interfacing the Atmel JTAG ICE to GDB
 Name:		avarice
 Version:	2.12
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://sourceforge.net/projects/avarice

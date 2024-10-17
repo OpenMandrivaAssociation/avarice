@@ -4,7 +4,7 @@ Version:	2.12
 Release:	3
 License:	GPLv2+
 Group:		Development/Other
-Url:		http://sourceforge.net/projects/avarice
+Url:		https://sourceforge.net/projects/avarice
 Source0:	http://downloads.sourceforge.net/project/%{name}/%{name}/%{name}-%{version}/%{name}-%{version}.tar.bz2
 # From Debian
 Source1:	avarice.rules

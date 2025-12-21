@@ -10,6 +10,11 @@ Source0:	http://downloads.sourceforge.net/project/%{name}/%{name}/%{name}-%{vers
 Source1:	avarice.rules
 Patch0:		avarice-2.10-link.patch
 Patch1:		avarice-2.12-headers.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	binutils-devel
 BuildRequires:	gettext-devel
 BuildRequires:	pkgconfig(libusb)
